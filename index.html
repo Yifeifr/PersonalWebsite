@@ -2,7 +2,7 @@
 title: Yifei's home
 layout: default
 ---
-<link href="{{ 'css/home.css' | prepend: site.baseurl }}" type="text/css" rel="stylesheet">
+<link href="{{ site.baseurl }}/css/home.css" type="text/css" rel="stylesheet">
 
 <div id="index-banner">
   <div class="section">
@@ -13,7 +13,7 @@ layout: default
         <h5 class="header col s12 light">Welcome to my personal website!</h5>
       </div>
       <div class="row center">
-        <a href="{{ "about.html" | prepend: site.baseurl }}" id="download-button" class="btn-large waves-effect waves-light blue-grey">About Me</a>
+        <a href="{{site.baseurl}}/about.html" id="download-button" class="btn-large waves-effect waves-light blue-grey">About Me</a>
       </div>
       <br><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
@@ -22,8 +22,8 @@ layout: default
 
 <div id="particles-js" style="position: absolute; height: 100vh; z-index: -1;"></div>
 
-<script src="{{ "js/particles.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{site.baseurl }}/js/particles.min.js"></script>
 
 <script>
-  particlesJS.load('particles-js', '{{ "particles.json" | prepend: site.baseurl }}');
+  particlesJS.load('particles-js', '{{ site.baseurl }}/particles.json');
 </script>
