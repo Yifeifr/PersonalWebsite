@@ -1,0 +1,37 @@
+---
+title: sudoku
+layout: default
+---
+
+<script type="text/javascript" src="{{ "/js/angular.min.js" | prepend: site.url }}"></script>
+<script type="text/javascript" src="{{ "/js/aboutApp.js" | prepend: site.url }}"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.modal-trigger').leanModal();
+  });
+ </script>
+ <br /> 
+ <br />
+ <br />
+ <br />
+<div ng-app="aboutApp">
+  <div ng-controller="DescriptionController">
+    <div class="container">
+      <div class="row">
+        <div class="col 4">
+          <div class="card blue-grey darken-1 hoverable">
+            <div class="card-image">
+              <img src="{{ "/img/projects/sudoku.png" | prepend: site.url }}">
+            </div>
+          </div>
+        </div>
+        <div class="col s8">
+          <h4>Sudoku Solver</h4>
+          <p class="light">12/2015 &nbsp;ENSEA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ---- Cergy, France</p>
+          <p class="light">Solved Algorithm using recursive backtracking in C++</p>
+          <p class="light">Created GUI with Qt</p>
+        </div>
+      </div>
+    </div>
+  </div>
+

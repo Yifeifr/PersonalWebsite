@@ -1,0 +1,39 @@
+---
+title: master thesis
+layout: default
+---
+
+<script type="text/javascript" src="{{ "/js/angular.min.js" | prepend: site.url }}"></script>
+<script type="text/javascript" src="{{ "/js/aboutApp.js" | prepend: site.url }}"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.modal-trigger').leanModal();
+  });
+ </script>
+ <br /> 
+ <br />
+ <br />
+ <br />
+<div ng-app="aboutApp">
+  <div ng-controller="DescriptionController">
+    <div class="container">
+      <div class="row">
+        <div class="col 6">
+          <div class="card blue-grey darken-1 hoverable">
+            <div class="card-image">
+              <img src="{{ "/img/projects/renault.jpg" | prepend: site.url }}">
+            </div>
+          </div>
+        </div>
+        <div class="col s8">
+          <h4>Master thesis: Traffic rules modeling for autonomous vehicles</h4>
+          <p class="light">03/01/2016 - 08/31/2016 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R&D Department at Renault Technocentre ---- Guyancourt, France</p>
+          <p class="light">Built up an expert system for traffic rules</p>
+          <p class="light">Knowledge representation by ontology technologies</p>
+          <p class="light">Made inferences using KnowRob Framewor</p>
+          <p class="light">Communicated with Robot Operating System</p>
+        </div>
+      </div>
+    </div>
+  </div>
+

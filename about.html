@@ -1,0 +1,89 @@
+---
+title: About
+layout: default
+---
+<!--
+<script type="text/javascript" src="{{ "/js/angular.min.js" | prepend: site.url }}"></script>
+<script type="text/javascript" src="{{ "/js/aboutApp.js" | prepend: site.url }}"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.modal-trigger').leanModal();
+  });
+ </script>
+
+-->
+<div ng-app="aboutApp">
+  <div ng-controller="DescriptionController">
+    <div class="container">
+      <div class="row">
+        <div class="col s4">
+          <div class="card blue-grey darken-1 hoverable">
+            <div class="card-image">
+              <img src="{{ "/img/me.JPG" | prepend: site.url }}">
+            </div>
+          </div>
+        </div>
+        <div class="col s8">
+          <h1>About Me</h1>
+          <p class="light">Hi! I will get my master's degree in Computer Science from ENSEA. I speak English, French and Chinese. Now I live in Paris.</p>
+          <p class="light">I am very passionate about Artificial Intelligence, Robotics, Machine Learning and Automated Reasoning.</p>
+          <p class="light">I am looking forward to new challenges!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+	      <div class="col s8">
+          <h4>Education</h4>
+          <h5> 2014 – 2016 &nbsp;&nbsp;École Nationale Supérieure de l'Électronique et de ses Applications</h5>
+          <p class="light"> <b>Major: </b> Computer Science and System &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---- Cergy, France</p>
+          <p class="light">Coursework: Unix OS, Parallel Processing Architecture, Object Oriented Programming,  Algorithms, Digital Integrated Circuits Architecture, Design Methodology, Software Engineering, Signal Transmission, Sampling and Discrete Systems,  Signal Transmission, Protocols and Networks Architecture</p>
+          <h5> 2010 – 2014 &nbsp;&nbsp; Nanjing University of Science and Technology </h5>
+          <p class="light"> <b>Major: </b> Optoelectronic Information Engineering &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---- Nanjing, China</p>
+          <p class="light">Coursework: Principle and Interface of Microprocessor, Integrated Circuits, EDA Design, Photoelectric Sensors Theory of Operation, Image Processing, C++, Optical Communication, Applied Optics, Physical Optics, Laser Theory </p>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="{{ "/img/bg.jpg" | prepend: site.url }}" alt="ok"></div>
+  </div>
+
+  <div class="container">
+    <div class="row center">
+      <div class="col s12">
+        <h3></h3>
+        <h4>Activity & Award</h4>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="card blue-grey darken-1 hoverable">
+          <div class="card-content white-text">
+            <p> 2012-2013  <b>Outstanding Volunteer in Jiangsu Province, China</b></p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="card blue-grey darken-1 hoverable">
+          <div class="card-content white-text">
+            <p>2011-2012   <b>Leader of the Association of Etiquette</b></p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="card blue-grey darken-1 hoverable">
+          <div class="card-content white-text">
+            <p>2011-2012  <b>Minister of the Literature and Art Department in the School Student Union</b></p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="card blue-grey darken-1 hoverable">
+          <div class="card-content white-text">
+            <p>2010-2011   <b>Jiangsu Province College Students Dragon Boat Race, Fourth Place</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+

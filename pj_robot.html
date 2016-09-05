@@ -1,0 +1,40 @@
+---
+title: robot
+layout: default
+---
+
+<script type="text/javascript" src="{{ "/js/angular.min.js" | prepend: site.url }}"></script>
+<script type="text/javascript" src="{{ "/js/aboutApp.js" | prepend: site.url }}"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.modal-trigger').leanModal();
+  });
+ </script>
+ <br /> 
+ <br />
+ <br />
+ <br />
+<div ng-app="aboutApp">
+  <div ng-controller="DescriptionController">
+    <div class="container">
+      <div class="row">
+        <div class="col 4">
+          <div class="card blue-grey darken-1 hoverable">
+            <div class="card-image">
+              <img src="{{ "/img/projects/robot.png" | prepend: site.url }}">
+            </div>
+          </div>
+        </div>
+        <div class="col s8">
+          <h4>Trajectory planning and biped robot control based on Arduino</h4>
+          <p class="light">01/2015-08/2015  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Information Processing and Systems Lab (ETIS - CNRS) ---- Cergy, France</p>
+          <p class="light">Modeled using the Denavit-Hartenberg method</p>
+          <p class="light">Controlled six servomotors and communicated with Arduino</p>
+          <p class="light">Modeled a six servomotors biped robot by CATIA</p>
+          <p class="light">Optimized trajectory planning</p>
+          <p class="light">Stability Analysis</p>
+        </div>
+      </div>
+    </div>
+  </div>
+

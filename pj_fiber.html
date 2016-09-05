@@ -1,0 +1,37 @@
+---
+title: fiber
+layout: default
+---
+
+<script type="text/javascript" src="{{ "/js/angular.min.js" | prepend: site.url }}"></script>
+<script type="text/javascript" src="{{ "/js/aboutApp.js" | prepend: site.url }}"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.modal-trigger').leanModal();
+  });
+ </script>
+ <br /> 
+ <br />
+ <br />
+ <br />
+<div ng-app="aboutApp">
+  <div ng-controller="DescriptionController">
+    <div class="container">
+      <div class="row">
+        <div class="col 4">
+          <div class="card blue-grey darken-1 hoverable">
+            <div class="card-image">
+              <img src="{{ "/img/projects/fiber.png" | prepend: site.url }}">
+            </div>
+          </div>
+        </div>
+        <div class="col s8">
+          <h4>Analysis and design of laser-to-Fiber Coupling</h4>
+          <p class="light">02/2014 – 06/2014  &nbsp;NUST &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ---- Nanjing, China</p>
+          <p class="light">Measured and analyzed the distribution of the optical field for different laser semiconductors and different core sizes of optical fiber using MATLAB</p>
+          <p class="light">Constructed a coupling system between the multimode fiber and the semiconductor laser</p>
+        </div>
+      </div>
+    </div>
+  </div>
+

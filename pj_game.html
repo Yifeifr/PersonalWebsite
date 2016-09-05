@@ -1,0 +1,39 @@
+---
+title: game
+layout: default
+---
+
+<script type="text/javascript" src="{{ "/js/angular.min.js" | prepend: site.url }}"></script>
+<script type="text/javascript" src="{{ "/js/aboutApp.js" | prepend: site.url }}"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.modal-trigger').leanModal();
+  });
+ </script>
+ <br /> 
+ <br />
+ <br />
+ <br />
+<div ng-app="aboutApp">
+  <div ng-controller="DescriptionController">
+    <div class="container">
+      <div class="row">
+        <div class="col 4">
+          <div class="card blue-grey darken-1 hoverable">
+            <div class="card-image">
+              <img src="{{ "/img/projects/game.png" | prepend: site.url }}">
+            </div>
+          </div>
+        </div>
+        <div class="col s8">
+          <h4>Turn-based strategy game design</h4>
+          <p class="light">10/2015 – 01/2016 &nbsp;ENSEA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ---- Cergy, France</p>
+          <p class="light">Collaborated with teammates to design and build the game in C++ / SFML</p>
+          <p class="light">Management and version control with Git</p>
+          <p class="light">Parallel programming</p>
+          <p class="light">Team members: Yifei, Benoit, Kusan</p>
+        </div>
+      </div>
+    </div>
+  </div>
+

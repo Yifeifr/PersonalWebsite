@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yifei ZHANG</title>
+    <description>Love the world, with all my intelligence. 
+</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 05 Sep 2016 01:51:32 +0200</pubDate>
+    <lastBuildDate>Mon, 05 Sep 2016 01:51:32 +0200</lastBuildDate>
+    <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>This is my first post!</title>
+        <description>&lt;p&gt;Welcome to my website, this is my first post.
+I am trying to design and build my personal website.
+You can tell and help me if you have good ideas.&lt;/p&gt;
+
+&lt;p&gt;Yifei&lt;/p&gt;
+</description>
+        <pubDate>Mon, 05 Sep 2016 00:42:33 +0200</pubDate>
+        <link>/test/2016/09/05/first-post.html</link>
+        <guid isPermaLink="true">/test/2016/09/05/first-post.html</guid>
+        
+        <category>test</category>
+        
+        
+        <category>test</category>
+        
+      </item>
+    
+  </channel>
+</rss>
