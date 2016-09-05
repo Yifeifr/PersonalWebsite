@@ -11,7 +11,7 @@ email: yifei.zhang.fr@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Love the world, with all my intelligence. 
 baseurl: ""
-#url: "http://h313.github.io"
+url: "http://Yifeifr.github.io"
 
 markdown: kramdown
 
