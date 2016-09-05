@@ -2,11 +2,11 @@
 title: Contact
 layout: default
 ---
-<link type="text/css" rel="stylesheet" href="{{ "/css/form.css" | prepend: site.url }}"/>
+<link type="text/css" rel="stylesheet" href="{{ "/css/form.css" | prepend: site.baseurl }}"/>
 <script src="https://www.google.com/recaptcha/api.js?onload=vcRecaptchaApiLoaded&render=explicit" async defer></script>
-<script type="text/javascript" src="{{ "/js/angular.min.js" | prepend: site.url }}"></script>
-<script type="text/javascript" src="{{ "/js/angular-recaptcha.min.js" | prepend: site.url }}"></script>
-<script type="text/javascript" src="{{ "/js/contactApp.js" | prepend: site.url }}"></script>
+<script type="text/javascript" src="{{ "/js/angular.min.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/js/angular-recaptcha.min.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/js/contactApp.js" | prepend: site.baseurl }}"></script>
 
 <div id="index-banner" class="parallax-container">
   <div class="section no-pad-bot">
@@ -16,7 +16,7 @@ layout: default
       <br><br>
     </div>
   </div>
-  <div class="parallax"><img src="{{ '/img/bg.jpg' | prepend: site.url }}"></div>
+  <div class="parallax"><img src="{{ '/img/bg.jpg' | prepend: site.baseurl }}"></div>
 </div>
 <div ng-app="contactApp">
   <div ng-controller="ContactController">
