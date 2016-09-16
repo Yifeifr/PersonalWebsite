@@ -1,0 +1,105 @@
+---
+layout: post
+title: Coursera-Java-assignment-The bird sportsmeeting
+subtitle: 
+author: Yifei
+date: 2016-09-16 17:01:53 +0200
+categories: Java Assignment
+tag: Coursera
+---
+*Each class(or interface) was realized in one file. This assignment aims to practice the usage of interface and the inheritance of class. We model a relay race. 
+
+On y va!
+
+________________________________________________________________________________________________________
+
+//an interface to define some behaviors of animal
+public interface animal {
+	
+	void fly();
+	void eat();
+	void sleep();
+
+}
+
+//we override the Fonction fly()
+public abstract class Birds implements animal {
+	
+	@Override
+	public void fly() {
+		// TODO Auto-generated method stub
+		System.out.println("Flying! ");
+
+	}
+
+	@Override
+	public void eat() {
+		// TODO Auto-generated method stub
+	}
+
+	@Override
+	public void sleep() {
+		// TODO Auto-generated method stub
+	}
+
+}
+
+//We can see that there are some athletes in Class Birds, they would take part in the sports meeting.
+public class Athletes extends Birds {
+	
+	String athlete;
+	
+	public void setter(String athlete){
+		
+		this.athlete = athlete;
+		
+	}
+	
+	public String getter(String athlete){
+		
+		return athlete;
+		
+	}
+	
+	@Override
+	public final void fly() {
+		// TODO Auto-generated method stub
+		System.out.println("It's "+this.athlete+"'s turn! It is flying! ");
+
+	}
+}
+
+//now the sports meeting is ready to start, we have four athletes
+public class Sportsmeets extends Athletes {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String athlete1 = "athlete_bd1";
+		String athlete2 = "athlete_bd2";
+		String athlete3 = "athlete_bd3";
+		String athlete4 = "athlete_bd4";
+
+		System.out.println("Ready？GO");
+		Athletes bird1 = new Athletes();
+		bird1.setter(athlete1);
+		bird1.fly();
+		
+		Athletes bird2 = new Athletes();
+		bird2.setter(athlete2);
+		bird2.fly();
+		
+		Athletes bird3 = new Athletes();
+		bird3.setter(athlete3);
+		bird3.fly();
+		
+		Athletes bird4 = new Athletes();
+		bird4.setter(athlete4);
+		bird4.fly();
+		System.out.println("Done!");
+
+	}
+
+}
