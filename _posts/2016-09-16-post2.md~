@@ -15,7 +15,7 @@ ________________________________________________________________________________
 public class Eratos {
 	
 	public static void main (String []args){
-	    //init
+	        //init
 		int n = 10000;
 		int i;
 		int []nums = new int[n+1];
@@ -35,7 +35,7 @@ public class Eratos {
 			}
 		}
 		
-	    //print
+	        //print
 		System.out.println("Done! the results : ");
 		
 		for (int num = 0; num < nums.length; num ++){
