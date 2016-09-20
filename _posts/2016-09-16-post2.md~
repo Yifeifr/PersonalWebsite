@@ -10,6 +10,7 @@ tag: Coursera
 
 Here is an assignment of java class in Coursera, we aim to find all prime numbers up to any given limit(here we have n=10000).
 
+____________________________________________________________________________________________________
 
 public class Eratos {
 	
@@ -22,10 +23,10 @@ public class Eratos {
 		nums[0] = 1;
 		nums[1] = 1;
 		
-		for(i = 2; i <= n;i++) sample[i-2] = i;
+		for (i = 2; i <= n;i++) sample[i-2] = i;
 		
 		//calculate
-		for(int j = 2; j <= Math.sqrt(n);j++){
+		for (int j = 2; j <= Math.sqrt(n);j++){
 			
 			for (int sam : sample){
 				
@@ -37,9 +38,9 @@ public class Eratos {
 	    //print
 		System.out.println("Done! the results : ");
 		
-		for( int num = 0; num < nums.length; num ++){
+		for (int num = 0; num < nums.length; num ++){
 			
-			if( nums[num] == 0 ){
+			if (nums[num] == 0){
 				
 				System.out.println(num);
 				

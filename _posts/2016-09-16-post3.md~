@@ -7,9 +7,10 @@ date: 2016-09-16 17:01:53 +0200
 categories: Java Assignment
 tag: Coursera
 ---
-*Each class(or interface) was realized in one file. This assignment aims to practice the usage of interface and the inheritance of class. We model a relay race. 
 
-On y va!
+*Each class(or interface) was realized in one file. This assignment aims to practice the usage of interface, the inheritance of class, override, setter/getter and final/static/abstract. 
+
+So we model a relay race. On y va!
 
 ________________________________________________________________________________________________________
 
