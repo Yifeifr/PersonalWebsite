@@ -15,6 +15,7 @@ So we model a relay race. On y va!
 ________________________________________________________________________________________________________
 
 //an interface to define some behaviors of animal
+
 public interface animal {
 	
 	void fly();
@@ -24,6 +25,7 @@ public interface animal {
 }
 
 //we override the Fonction fly()
+
 public abstract class Birds implements animal {
 	
 	@Override
@@ -46,6 +48,7 @@ public abstract class Birds implements animal {
 }
 
 //We can see that there are some athletes in Class Birds, they would take part in the sports meeting.
+
 public class Athletes extends Birds {
 	
 	String athlete;
@@ -56,9 +59,9 @@ public class Athletes extends Birds {
 		
 	}
 	
-	public String getter(String athlete){
+	public String getter{
 		
-		return athlete;
+		return this.athlete;
 		
 	}
 	
@@ -71,6 +74,7 @@ public class Athletes extends Birds {
 }
 
 //now the sports meeting is ready to start, we have four athletes
+
 public class Sportsmeets extends Athletes {
 
 	/**
