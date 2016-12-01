@@ -7,3 +7,20 @@ date: 2016-12-01 17:38:08 +0100
 categories: Algorithm
 tag: Algorithm C++
 ---
+
+...............................................................
+
+Find K-th largest element in N arrays.
+
+...............................................................
+
+In n=2 arrays [[9,3,2,4,7],[1,2,3,4,8]], the 3rd largest element is 7.
+
+In n=2 arrays [[9,3,2,4,8],[1,2,3,4,2]], the 1st largest element is 9, 2nd largest element is 8, 3rd largest element is 7 and etc.
+
+...............................................................
+
+One solution: https://github.com/Yifeifr/algo/blob/master/Kth%20Largest%20in%20N%20Arrays
+
+...............................................................
+
