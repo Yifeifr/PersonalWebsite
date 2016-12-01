@@ -1,15 +1,49 @@
 ---
 layout: post
-title: Get selected!Self-driving car engineer nanodegree program
+title: Algorithme-Triangle Count
 subtitle: 
 author: Yifei
-date: 2016-10-08 14:56:00 +0200
-categories: AV
-tag: AV OpenSource
+date: 2016-12-01 16:56:00 +0200
+categories: Algorithme
+tag: Algorithme C++
 ---
 
-I'm so excited to say that I will participate in the 28/11 cohort of Self-driving car engineer nanodegree program. 
-Thanks to the internship experience, I guess it'll be easier to start. But what's more, it's a good chance to learn first-hand and transverse knowledge of autonomous vehicles from the senior engineers, then implement all we can imagine.
-The program will last 9 months and ~10 hours/week are needed. Hope everything goes well.
+Given an array of integers, how many three numbers can be found in the array, so that we can build an triangle whose three edges length is the three numbers that we find?
+Given array S = [3,4,6,7], return 3. They are:
 
-Yifei
+[3,4,6]
+[3,6,7]
+[4,6,7]
+
+Given array S = [4,4,4,4], return 4. They are:
+
+[4(1),4(2),4(3)]
+[4(1),4(2),4(4)]
+[4(1),4(3),4(4)]
+[4(2),4(3),4(4)]
+
+One solution: https://github.com/Yifeifr/algo/blob/master/Triangle%20Count
+class Solution {
+public:
+    /**
+     * @param S: A list of integers
+     * @return: An integer
+     */
+    int triangleCount(vector<int> &S) {
+        // write your code here
+        sort(S.begin(), S.end());
+        int n = S.size();
+        int cnt = 0;
+        
+        for (int i = 0; i < n; ++i) {
+            int k = i + 2;
+            for (int j = i + 1; j < n; ++j) {
+                while (k < n && (S[i] + S[j] > S[k])) {
+                        k ++;
+                }
+                cnt += k - 1 - j;
+            }
+        }
+        return cnt;
+    }
+};
